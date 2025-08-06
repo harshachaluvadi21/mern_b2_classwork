@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing with HTML and CSS</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .scene {
+            position: relative;
+            width: 500px;
+            height: 400px;
+        }
+
+        /* House body */
+        .house {
+            position: absolute;
+            bottom: 50px;
+            left: 300px;
+            width: 150px;
+            height: 200px;
+            background: none;
+            border: 2px solid black;
+        }
+
+        /* Roof */
+        .roof {
+            position: absolute;
+            left: 300px;
+            bottom: 250px;
+            width: 0;
+            height: 0;
+            border-left: 75px solid transparent;
+            border-right: 75px solid transparent;
+            border-bottom: 100px solid black;
+        }
+
+        /* Door */
+        .door {
+            position: absolute;
+            bottom: 50px;
+            left: 355px;
+            width: 40px;
+            height: 60px;
+            border: 2px solid black;
+            background: none;
+        }
+
+        /* Cloud */
+        .cloud {
+            position: absolute;
+            top: 50px;
+            left: 150px;
+            width: 80px;
+            height: 40px;
+            background:lightblue;
+            border: 2px solid none;
+            border-radius: 50px;
+        }
+
+        .cloud::before,
+        .cloud::after {
+            content: '';
+            position: absolute;
+            background: lightblue;
+            border: 2px solid none;
+            border-radius: 50px;
+        }
+
+        .cloud::before {
+            width: 40px;
+            height: 40px;
+            top: -20px;
+            left: 10px;
+        }
+
+        .cloud::after {
+            width: 40px;
+            height: 40px;
+            top: -10px;
+            right: 10px;
+        }
+
+        /* Birds */
+        .bird {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-bottom: 2px solid black;
+            border-right: 2px solid black;
+            transform: rotate(-45deg);
+        }
+
+        .bird::after {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-bottom: 2px solid black;
+            border-right: 2px solid black;
+            transform: rotate(90deg);
+            top: -15px;
+            left: 15px;
+        }
+
+        .bird1 { top: 100px; left: 50px; }
+        .bird2 { top: 150px; left: 100px; }
+
+    </style>
+</head>
+<body>
+    <div class="scene">
+        <div class="house"></div>
+        <div class="roof"></div>
+        <div class="door"></div>
+        <div class="cloud"></div>
+        <div class="bird bird1"></div>
+        <div class="bird bird2"></div>
+    </div>
+</body>
+</html>
