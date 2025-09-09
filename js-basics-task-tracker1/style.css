@@ -1,0 +1,15 @@
+body {
+ font-family: sans-serif;
+ background-color: #df0d0d;
+ padding: 2rem;
+ text-align: center;
+}
+
+
+#output {
+ margin-top: 1rem;
+ padding: 1rem;
+ background-color: #f1ebeb;
+ color: #151111;  /* ── TEACHING-BUG #4 (style) ── */
+ border: 1px solid #ccc;
+}
