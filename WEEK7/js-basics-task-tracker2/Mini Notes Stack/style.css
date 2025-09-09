@@ -1,0 +1,36 @@
+body {
+  font-family: sans-serif;
+  background: #f9f9f9;
+  text-align: center;
+  padding: 2rem;
+}
+
+#noteInput {
+  padding: 0.5rem;
+  width: 220px;
+  margin-bottom: 1rem;
+}
+
+#addBtn, #clearBtn {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+#noteList {
+  margin-top: 1rem;
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  text-align: left;
+  min-height: 50px;
+}
+
+.note {
+  margin-bottom: 0.5rem;
+}
+
+/* Stretch goal: hover effect */
+.note:hover {
+  background: #f0f0f0;
+}
